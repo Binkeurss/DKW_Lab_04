@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab_4</title>
+</head>
+<body>
+  <header style="background-color: rgb(245, 116, 191);
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;"><b>Gym KingOfGym</b>
+  </header>
+  <main>
+    <fieldset>
+      <legend>Thông tin cơ bản khách hàng</legend>
+      <form action="goitap.html" method="post">
+        <div class="input-group">
+          <label for="HoVaTenKhachHang">Họ và tên khách hàng:</label>
+          <input type="text" id="HoVaTenKhachHang" name="HoVaTenKhachHang" required>
+        </div>
+        <div class="input-group">
+          <label for="NgaySinhKhachHang">Ngày sinh:</label>
+          <input type="date" id="NgaySinhKhachHang" name="NgaySinhKhachHang" required>
+        </div>
+        <div class="input-group">
+          <label for="SDTKH">Số điện thoại khách hàng:</label>
+          <input type="number" id="SDTKH" name="SDTKH" required>
+        </div>
+        <div class="input-group">
+          <label for="DiaChiKhachHang">Địa chỉ khách hàng:</label>
+          <input type="text" id="DiaChiKhachHang" name="DiaChiKhachHang" required>
+        </div>
+        <div class="input-group">
+          <label for="CMND">Số CMND:</label>
+          <input type="text" id="CMND" name="CMND" required>
+        </div>
+        <div class="input-group">
+          <label>Giới tính:</label>
+          <div class="radio-group">
+            <input type="radio" name="GioiTinh" id="Nam" value="Nam">
+            <label for="Nam">Nam</label>
+            <input type="radio" name="GioiTinh" id="Nu" value="Nữ">
+            <label for="Nu">Nữ</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="Email">Email:</label>
+          <input type="email" id="Email" name="Email">
+        </div>
+        <button type="submit">Gửi thông tin</button>
+      </form>
+    </fieldset>
+    <script>
+      document.querySelector('form').addEventListener('submit', function(event) {
+        var sdt = document.getElementById("SDTKH").value;
+        if (sdt[0] != "0") {
+          alert('Số đầu tiên của SĐT không phải là 0');
+          event.preventDefault(); // Ngăn không cho form gửi đi
+        }
+      });
+    </script>
+  </main>
+</body>
+</html>
+
+<style>
+  fieldset {
+    margin: 20px;
+    padding: 20px;
+  }
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .input-group label {
+    width: 180px; /* Đặt chiều rộng cố định cho label */
+    margin-right: 20px; /* Khoảng cách giữa label và input */
+  }
+  .input-group input,
+  .input-group .radio-group {
+    flex: 0.15; /* Input sẽ chiếm phần còn lại của dòng */
+  }
+  .radio-group {
+    display: flex;
+    align-items: center;
+  }
+  .radio-group label {
+    margin-right: -20px;
+  }
+</style>
