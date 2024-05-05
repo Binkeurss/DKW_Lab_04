@@ -12,9 +12,9 @@
   padding: 10px;"><b>Gói tập</b>
   </header>
   <main>
-    <h1>Thông tin gói tập của khách hàng</h1>
-    <div class="table_taptin">
-      <table>
+    <div>
+      <h1>Thông tin gói tập của khách hàng</h1>
+      <table class="table_taptin">
         <tr class="ThongTinGoi">
           <th>
             <input type="radio" id="GoiThuong" name="GoiTin">
@@ -185,9 +185,113 @@
         </tr>
       </table>
     </div>
+    <div>
+      <h1>Chọn chi nhánh tham gia 
+        <b style="font-family: Arial, Helvetica, sans-serif;
+        color: red;
+        border-style: dashed;"><i>Chọn gói Signature không còn chọn dưới này</i></b>
+      </h1>
+      <table class="ChiNhanh_Table">
+        <tr>
+          <th>
+            <input type="radio" id = "KimNguu" name="ChiNhanh">
+            <label for="KimNguu">Kim Ngưu</label>
+            <input type="radio" id = "NhanMa" name="ChiNhanh">
+            <label for="NhanMa">Nhân mã</label>
+            <input type="radio" id = "CuGiai" name="ChiNhanh">
+            <label for="CuGiai">Cự Giải</label>
+            <input type="radio" id = "ThienYet" name="ChiNhanh">
+            <label for="ThienYet">Thiên Yết</label>
+            <input type="radio" id = "ThienBinh" name="ChiNhanh">
+            <label for="ThienBinh">Thiên Bình</label>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <div class="DanhGia">
+      <h1>Khảo sát khách hàng</h1>
+      <fieldset class="survey">
+        <legend>Fitness Suite Survey</legend>
+        <div class="grid-container">
+          <div class="grid-item-1">
+            <div class="grid-item-1-item-1">
+              <h3>Hôm nay bạn đã sử dụng tiện nghi nào trong Fitness Suite?</h3>
+              <p>Hãy áp dụng tất cả đánh dấu đó</p>
+            </div>
+            <div class="grid-item-1-item-2">
+              <div class="grid-item-1-item-2-item-1">
+                <input type="checkbox" id="RowingMachine" name="destination">
+                <label for="RowingMachine">Máy chèo</label><br>
+                <input type="checkbox" id="ExerciseBike" name="destination">
+                <label for="ExerciseBike">Xe đạp tập thể dục</label><br>
+                <input type="checkbox" name="FreeWeights" id="destination">
+                <label for="FreeWeights">Trọng lượng miễn phí</label><br>
+                <input type="checkbox" name="Treadmill" id="destination">
+                <label for="Treadmill">Máy chạy bộ</label>
+              </div>
+              <div class="grid-item-1-item-2-item-2">
+                <input type="checkbox" id="EllipticalTrainer" name="destination">
+                <label for="EllipticalTrainer">Huấn luyện viên elip</label><br>
+                <input type="checkbox" id="BalanceTrainer" name="destination">
+                <label for="BalanceTrainer">Huấn luyện viên thăng bằng</label><br>
+                <input type="checkbox" name="ShoulderPressMachine" id="destination">
+                <label for="ShoulderPressMachine">Máy ép vai</label><br>
+                <input type="checkbox" name="ExerciseBalls" id="destination">
+                <label for="ExerciseBalls">Bóng tập thể dục</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item-2">
+            <div class="grid-item-2-item-1">
+              <h3>Hôm nay bạn đã sử dụng tiện nghi nào trong Fitness Suite?</h3>
+            </div>
+            <div class="grid-item-2-item-2">
+              <div class="grid-item-2-item-2-item-1">
+                <label for="RowingMachine">Máy chèo</label><br><br>
+                <label for="ExerciseBike">Xe đạp tập thể dục</label><br><br>
+                <label for="FreeWeights">Trọng lượng miễn phí</label><br><br>
+                <label for="Treadmill">Máy chạy bộ</label><br><br>
+                <label for="EllipticalTrainer">Huấn luyện viên elip</label><br><br>
+                <label for="BalanceTrainer">Huấn luyện viên thăng bằng</label><br><br>
+                <label for="ShoulderPressMachine">Máy ép vai</label><br><br>
+                <label for="ExerciseBalls">Bóng tập thể dục</label><br>
+              </div>
+              <div class="grid-item-2-item-2-item-2">
+                <input type="range" name="RowingMachine" id="destinationrange1" min="0" max="5" step="1" value="0"><output for="destinationrange1">0</output><br><br>
+                <input type="range" name="ExerciseBike" id="destinationrange2" min="0" max="5" step="1" value="0"><output for="destinationrange2">0</output><br><br>
+                <input type="range" name="FreeWeights" id="destinationrange3" min="0" max="5" step="1" value="0"><output for="destinationrange3">0</output><br><br>
+                <input type="range" name="Treadmill" id="destinationrange4" min="0" max="5" step="1" value="0"><output for="destinationrange4">0</output><br><br>
+                <input type="range" name="EllipticalTrainer" id="destinationrange5" min="0" max="5" step="1" value="0"><output for="destinationrange5">0</output><br><br>
+                <input type="range" name="BalanceTrainer" id="destinationrange6" min="0" max="5" step="1" value="0"><output for="destinationrange6">0</output><br><br>
+                <input type="range" name="ShoulderPressMachine" id="destinationrange7" min="0" max="5" step="1" value="0"><output for="destinationrange7">0</output><br><br>
+                <input type="range" name="ExerciseBalls" id="destinationrange8" min="0" max="5" step="1" value="0"><output for="destinationrange8">0</output><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <script>
+      for (let i = 1; i <= 8; i++) {
+        let desId = "destinationrange" + String(i);
+        let slider = document.getElementById(desId);
+        let output = document.querySelector(`output[for='${desId}']`);
+
+        if (slider && output) {
+          output.textContent = slider.value;
+
+          slider.addEventListener("input", function() {
+            output.textContent = this.value;
+          });
+        }
+      }
+    </script>
   </main>
 </body>
 </html>
+
+
 
 <style>
     table {
@@ -208,5 +312,119 @@
 
   .ChiTietGoi th {
     text-align: left;
+  }
+
+  .ChiNhanh_Table {
+    text-align: center;
+  }
+
+  .ChiNhanh_Table input {
+    margin-left: 50px;
+  }
+
+  .ChiNhanh_Table label {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .survey legend {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: #333;
+    color : white;
+    padding: 10px;
+    
+  }
+
+  .grid-item-1 {
+    background-color: white;
+    text-align: left;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-item-1-item-1 {
+    padding-left: 30%;
+  }
+
+  .grid-item-1-item-1 h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+
+  .grid-item-1-item-1 p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  .grid-item-1-item-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid-item-1-item-2-item-1 {
+    padding-left: 40%;
+  }
+
+  .grid-item-1-item-2-item-2 {
+    padding-left: 25%;
+  }
+
+  .grid-item-1-item-2-item-1,
+  .grid-item-1-item-2-item-2 {
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+  }
+
+  .grid-item-2 {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid-item-2-item-1 h3 {
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30%;
+  }
+
+  .grid-item-2-item-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid-item-2-item-2-item-1 {
+    padding-left: 40%;
+  }
+
+  .grid-item-2-item-2-item-1,
+  .grid-item-2-item-2-item-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+  }
+
+  output .destinationrange {
+    color: black;
   }
 </style>
