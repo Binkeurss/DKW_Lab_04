@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gói tập</title>
+</head>
+<body>
+  <header style="background-color: rgb(245, 116, 191);
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;"><b>Gói tập</b>
+  </header>
+  <main>
+    <h1>Thông tin gói tập của khách hàng</h1>
+    <div class="table_taptin">
+      <table>
+        <tr class="ThongTinGoi">
+          <th>
+            <input type="radio" id="GoiThuong" name="GoiTin">
+            <label for="GoiThuong">Gói thường</label>
+          </th>
+          <th>
+            <input type="radio" id="GoiVip" name="GoiTin">
+            <label for="GoiVip">Gói Vip</label>
+          </th>
+          <th>
+            <input type="radio" id="GoiSignature" name="GoiTin">
+            <label for="GoiSignature">Gói Signature</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="TapKhongGioiHan_GoiThuong" id="TapKhongGioiHan_GoiThuong" checked disabled>
+            <label for="TapKhongGioiHan">Tập không giới hạn</label>
+          </th>
+          <th>
+            <input type="radio" name="TapKhongGioiHan_GoiVip" id="TapKhongGioiHan_GoiVip" checked disabled>
+            <label for="TapKhongGioiHan">Tập không giới hạn</label>
+          </th>
+          <th>
+            <input type="radio" name="TapKhongGioiHan_GoiSignature" id="TapKhongGioiHan_GoiSignature" checked disabled>
+            <label for="TapKhongGioiHan">Tập không giới hạn</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="LockerRieng_GoiThuong" id="LockerRieng_GoiThuong" disabled>
+            <label for="LockerRieng">Locker riêng</label>
+          </th>
+          <th>
+            <input type="radio" name="LockerRieng_GoiVip" id="LockerRieng_GoiVip" checked disabled>
+            <label for="LockerRieng">Locker riêng</label>
+          </th>
+          <th>
+            <input type="radio" name="LockerRieng_GoiSignature" id="LockerRieng_GoiSignature" checked disabled>
+            <label for="LockerRieng">Locker riêng</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="TapDaChiNhanh_GoiThuong" id="TapDaChiNhanh_GoiThuong" disabled>
+            <label for="TapDaChiNhanh">Tập đa chi nhánh</label>
+          </th>
+          <th>
+            <input type="radio" name="TapDaChiNhanh_GoiVip" id="TapDaChiNhanh_GoiVip" checked disabled>
+            <label for="TapDaChiNhanh">Tập đa chi nhánh</label>
+          </th>
+          <th>
+            <input type="radio" name="TapDaChiNhanh_GoiSignature" id="TapDaChiNhanh_GoiSignature" checked disabled>
+            <label for="TapDaChiNhanh">Tập đa chi nhánh</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="NuocUongMienPhi_GoiThuong" id="NuocUongMienPhi_GoiThuong" checked disabled>
+            <label for="TapDaChiNhanh">Nước uống miễn phí</label>
+          </th>
+          <th>
+            <input type="radio" name="NuocUongMienPhi_GoiVip" id="NuocUongMienPhi_GoiVip" checked disabled>
+            <label for="TapDaChiNhanh">Nước uống miễn phí</label>
+          </th>
+          <th>
+            <input type="radio" name="NuocUongMienPhi_GoiSignature" id="NuocUongMienPhi_GoiSignature" checked disabled>
+            <label for="TapDaChiNhanh">Nước uống miễn phí</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="GXvY_GoiThuong" id="GXvY_GoiThuong" checked disabled>
+            <label for="GXvY">GroupX và Yoga</label>
+          </th>
+          <th>
+            <input type="radio" name="GXvY_GoiVip" id="GXvY_GoiVip" checked disabled>
+            <label for="GXvY">GroupX và Yoga</label>
+          </th>
+          <th>
+            <input type="radio" name="GXvY_GoiSignature" id="GXvY_GoiSignature" checked disabled>
+            <label for="GXvY">GroupX và Yoga</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="SDPT_S_S_GoiThuong" id="SDPT_S_S_GoiThuong" checked disabled>
+            <label for="SDPT_S_S">Sử dụng phòng tắm, Sauna, Steampath</label>
+          </th>
+          <th>
+            <input type="radio" name="SDPT_S_S_GoiVip" id="SDPT_S_S_GoiVip" checked disabled>
+            <label for="SDPT_S_S">Sử dụng phòng tắm, Sauna, Steampath</label>
+          </th>
+          <th>
+            <input type="radio" name="SDPT_S_S_GoiSignature" id="SDPT_S_S_GoiSignature" checked disabled>
+            <label for="SDPT_S_S">Sử dụng phòng tắm, Sauna, Steampath</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="KT_KTR_GoiThuong" id="KT_KTR_GoiThuong" disabled>
+            <label for="KT_KTR">Khăn tập, khăn tắm riêng</label>
+          </th>
+          <th>
+            <input type="radio" name="KT_KTR_GoiVip" id="KT_KTR_GoiVip" checked disabled>
+            <label for="KT_KTR">Khăn tập, khăn tắm riêng</label>
+          </th>
+          <th>
+            <input type="radio" name="KT_KTR_GoiSignature" id="KT_KTR_GoiSignature" checked disabled>
+            <label for="KT_KTR">Khăn tập, khăn tắm riêng</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="PTR_GoiThuong" id="PTR_GoiThuong" disabled>
+            <label for="PTR">PT riêng</label>
+          </th>
+          <th>
+            <input type="radio" name="PTR_GoiVip" id="PTR_GoiVip" disabled>
+            <label for="PTR">PT riêng</label>
+          </th>
+          <th>
+            <input type="radio" name="PTR_GoiSignature" id="PTR_GoiSignature" checked disabled>
+            <label for="PTR">PT riêng</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="PCR_GoiThuong" id="PCR_GoiThuong" disabled>
+            <label for="PCR">Phòng chờ riêng</label>
+          </th>
+          <th>
+            <input type="radio" name="PCR_GoiVip" id="PCR_GoiVip" disabled>
+            <label for="PCR">Phòng chờ riêng</label>
+          </th>
+          <th>
+            <input type="radio" name="PCR_GoiSignature" id="PCR_GoiSignature" checked disabled>
+            <label for="PCR">Phòng chờ riêng</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="JBFP_GoiThuong" id="JBFP_GoiThuong" disabled>
+            <label for="JBFP">Juice Bar Free Prepaid</label>
+          </th>
+          <th>
+            <input type="radio" name="JBFP_GoiVip" id="JBFP_GoiVip" disabled>
+            <label for="JBFP">Juice Bar Free Prepaid</label>
+          </th>
+          <th>
+            <input type="radio" name="JBFP_GoiSignature" id="JBFP_GoiSignature" checked disabled>
+            <label for="JBFP">Juice Bar Free Prepaid</label>
+          </th>
+        </tr>
+        <tr class="ChiTietGoi">
+          <th>
+            <input type="radio" name="DaChiNhanh_GoiThuong" id="DaChiNhanh_GoiThuong" disabled>
+            <label for="DaChiNhanh">Đa chi nhánh</label>
+          </th>
+          <th>
+            <input type="radio" name="DaChiNhanh_GoiVip" id="DaChiNhanh_GoiVip" disabled>
+            <label for="DaChiNhanh">Đa chi nhánh</label>
+          </th>
+          <th>
+            <input type="radio" name="DaChiNhanh_GoiSignature" id="DaChiNhanh_GoiSignature" checked disabled>
+            <label for="DaChiNhanh">Đa chi nhánh</label>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
+
+<style>
+    table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp viền của các ô */
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+  }
+
+  .ThongTinGoi {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .ChiTietGoi th {
+    text-align: left;
+  }
+</style>

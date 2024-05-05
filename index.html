@@ -14,7 +14,7 @@
   <main>
     <fieldset>
       <legend>Thông tin cơ bản khách hàng</legend>
-      <form action="goitap.html" method="post">
+      <form id="customerForm">
         <div class="input-group">
           <label for="HoVaTenKhachHang">Họ và tên khách hàng:</label>
           <input type="text" id="HoVaTenKhachHang" name="HoVaTenKhachHang" required>
@@ -52,11 +52,16 @@
       </form>
     </fieldset>
     <script>
-      document.querySelector('form').addEventListener('submit', function(event) {
-        var sdt = document.getElementById("SDTKH").value;
-        if (sdt[0] != "0") {
-          alert('Số đầu tiên của SĐT không phải là 0');
-          event.preventDefault(); // Ngăn không cho form gửi đi
+      document.getElementById('customerForm').addEventListener('submit', function(event) {
+         // Ngăn form tự động gửi đi
+         event.preventDefault();
+        var sdt = document.getElementById('SDTKH').value;
+        if (sdt[0] !== "0" || sdt.length !== 10) {
+          alert('Số điện thoại phải bắt đầu bằng số 0 và có 10 chữ số.');
+
+        } else {
+          // Chuyển hướng người dùng tới trang "goitap.html" nếu điều kiện thỏa mãn
+          window.location.href = 'goitap.html';
         }
       });
     </script>
